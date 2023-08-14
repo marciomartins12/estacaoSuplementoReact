@@ -1,3 +1,4 @@
+import Produtos from "./componentes/SecaoProdutos";
 
 function App() {
   const produtos = [
@@ -142,7 +143,9 @@ function App() {
 
   return (
     <div className="App">
-
+      <Produtos
+      produtos={produtos}
+      />
     </div>
   );
 }
