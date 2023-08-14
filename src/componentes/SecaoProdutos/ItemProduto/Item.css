@@ -1,0 +1,18 @@
+.produto{
+    flex: 1;
+    color: white;
+}
+.produto h3{
+    font-size: 1.40em;
+}
+
+.divPreco{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.divPreco h5{
+    margin-right: 1em;
+
+}

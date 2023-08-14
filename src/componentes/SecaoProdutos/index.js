@@ -1,10 +1,9 @@
 import Item from "./ItemProduto"
-
+import "./Produtos.css"
 const Produtos = (props) => {
 
-    console.table(props.produtos)
     return (
-        <div>
+        <div className="div-produtos">
             {props.produtos.map((item)=>{
                 return <Item
                 nome={item.nome}

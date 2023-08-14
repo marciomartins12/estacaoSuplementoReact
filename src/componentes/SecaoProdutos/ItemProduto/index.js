@@ -1,10 +1,19 @@
-const Item = (props)=>{
+import { MdAddShoppingCart } from "react-icons/md"
+import "./Item.css"
+const Item = (props) => {
     return (
-        <div>
-            <img src={props.imagem} alt={props.nome}/>
-            <h3>{props.nome}</h3>
-            <h5>{props.subtitulo}</h5>
-            <h4>{props.preco}</h4>
+        <div className="produto">
+            <div>
+
+                <img src={props.imagem} alt={props.nome} />
+                <h3>{props.nome}</h3>
+                <h4>{props.subtitulo}</h4>
+
+                <div className="divPreco">
+                    <h5>{props.preco}</h5>
+                    <MdAddShoppingCart />
+                </div>
+            </div>
         </div>
     )
 }

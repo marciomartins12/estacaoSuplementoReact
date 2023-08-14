@@ -1,0 +1,6 @@
+.div-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
