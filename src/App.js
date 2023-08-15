@@ -1,8 +1,9 @@
 import Produtos from "./componentes/SecaoProdutos";
 import "./App.css"
 import { v4 as uuidv4 } from "uuid"
+import { useState } from "react";
 function App() {
-  const produtos = [
+  const [produtos, setProdutos] = useState([
     {
       nome: "Carnívoro Isolate",
       subtitulo: "Beef protein isolate",
@@ -138,14 +139,13 @@ function App() {
       id: uuidv4(),
       classe: "%20Coqueteleira"
     },
-
-  ]
-
+  ]);
 
   return (
     <div className="App">
       <h1>Estação<span>Suplementos</span></h1>
       <Produtos
+     
         produtos={produtos}
       />
     </div>

@@ -6,8 +6,10 @@ const Produtos = (props) => {
         <div className="div-produtos">
             {props.produtos.map((item)=>{
                 return <Item
-                nome={item.nome}
+                item={item}
+              
                 imagem={item.img}
+                nome={item.nome}
                 subtitulo={item.subtitulo}
                 descricao={item.descricao}
                 preco={item.preco}
