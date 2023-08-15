@@ -160,7 +160,7 @@ function App() {
           ? { ...produto, confirmacao: !produto.confirmacao }
           : produto
       ))
-
+//;
   }
   return (
     <div className="App">
