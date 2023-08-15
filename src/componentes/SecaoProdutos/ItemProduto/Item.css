@@ -1,19 +1,21 @@
-.produto{
+.produto {
     flex: 1;
     color: white;
     border-radius: .45em;
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
 }
-.produto h3{
+
+.produto h3 {
     font-size: 1.40em;
     position: relative;
 }
-.produto h4{
+
+.produto h4 {
     color: rgb(10, 134, 10);
     margin-bottom: .45em;
 }
 
-.divPreco{
+.divPreco {
     display: flex;
     align-items: center;
     text-align: center;
@@ -21,18 +23,72 @@
     justify-content: center;
     padding-bottom: .8em;
 }
-.divPreco h5{
-   color: black;
-   padding: .45em;
-   border-radius: .48em;
+
+.divPreco h5 {
+    color: black;
+    padding: .45em;
+    border-radius: .48em;
     background-color: yellow;
     margin-right: 1em;
     font-size: 1.5em;
 }
-.divPreco .iconeComprar{
-    font-size:2em;
+
+.divPreco .iconeComprar {
+    font-size: 2em;
 }
-.displayNone{
+
+.divPreco .iconeConfirmado {
+    font-size: 2em;
+animation:moviment .45s;
+}
+
+@keyframes moviment {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    20% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    30% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    70% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    80% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    90% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.displayNone {
     display: none;
 }
 
@@ -44,7 +100,7 @@
 
 
 
-.mostrar{
+.mostrar {
     display: block;
     position: fixed;
     width: 60%;
@@ -59,7 +115,8 @@
     z-index: 9999;
     border-radius: 1em;
 }
-.iconeVoltar{
+
+.iconeVoltar {
     font-size: 2.5em;
     position: absolute;
     left: 8%;

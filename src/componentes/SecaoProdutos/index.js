@@ -6,8 +6,9 @@ const Produtos = (props) => {
         <div className="div-produtos">
             {props.produtos.map((item, index) => {
                 return <Item
-                    item={item}
+                    id={item.id}
                     key={index}
+                    confirmacao={item.confirmacao}
                     sacola={props.sacola}
                     carrinho={props.carrinho}
                     imagem={item.img}

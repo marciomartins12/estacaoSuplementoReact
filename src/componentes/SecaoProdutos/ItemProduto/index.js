@@ -3,6 +3,7 @@ import "./Item.css"
 import {MdOutlineDone} from "react-icons/md"
 import { AiOutlineCloseCircle } from "react-icons/ai"
 const Item = (props) => {
+    
     return (
 
         <div className="produto">
@@ -19,12 +20,13 @@ const Item = (props) => {
                     <div className="divPreco">
                         <h5>R${props.preco}.00</h5>
 
-                        {(props.item.confimarcao)?
-                        <MdOutlineDone
-                        className="iconeComprar"/>:
-                        <MdAddShoppingCart
+                        {props.confirmacao?
+                        <MdOutlineDone  color="#090"
+                        className="iconeConfirmado"/>:
+                        <MdAddShoppingCart 
                         onClick={()=>{
-                            props.carrinho(props.item)
+                            
+                            props.carrinho(props.id)
                         }} className="iconeComprar" />
                         }
                     </div>

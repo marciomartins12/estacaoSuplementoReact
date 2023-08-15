@@ -148,8 +148,19 @@ function App() {
   ]);
   const [carrinho, setCarrinho] = useState([])
 
+  
   function enviarParaOCarrinho(item) {
-    setCarrinho([...carrinho, item]) 
+    const teste = produtos.filter((p) => p.id === item)
+    const teste2 = carrinho
+    setCarrinho([...teste2, ...teste])
+
+    setProdutos((prevProdutos) =>
+      prevProdutos.map((produto) =>
+        produto.id === item
+          ? { ...produto, confirmacao: !produto.confirmacao }
+          : produto
+      ))
+
   }
   return (
     <div className="App">
