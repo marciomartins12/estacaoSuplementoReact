@@ -130,22 +130,13 @@ function App() {
       id: uuidv4(),
       classe: "%20Pasta%20de%20Amendoim%20sabor%20avelã%20"
     },
-    {
-      nome: "Coqueteleira",
-      subtitulo: "Bater Suplementação",
-      preco: 25.00,
-      descricao: "Para melhor bater sua suplementação.",
-      img: "../img/coqueteleira.png",
-      id: uuidv4(),
-      classe: "%20Coqueteleira"
-    },
+   
   ]);
 
   return (
     <div className="App">
       <h1>Estação<span>Suplementos</span></h1>
       <Produtos
-     
         produtos={produtos}
       />
     </div>

@@ -8,19 +8,42 @@
     font-size: 1.40em;
     position: relative;
 }
+.produto h4{
+    color: rgb(10, 134, 10);
+    margin-bottom: .45em;
+}
 
 .divPreco{
     display: flex;
     align-items: center;
     text-align: center;
+    padding: .3em;
     justify-content: center;
+    padding-bottom: .8em;
 }
 .divPreco h5{
+   color: black;
+   padding: .45em;
+   border-radius: .48em;
+    background-color: yellow;
     margin-right: 1em;
+    font-size: 1.5em;
+}
+.divPreco .iconeComprar{
+    font-size:2em;
 }
 .displayNone{
     display: none;
 }
+
+
+
+
+
+
+
+
+
 .mostrar{
     display: block;
     position: fixed;

@@ -2,7 +2,6 @@ import { MdAddShoppingCart } from "react-icons/md"
 import "./Item.css"
 import { AiOutlineCloseCircle } from "react-icons/ai"
 const Item = (props) => {
-    let mostrar = "";
     return (
 
         <div className="produto">
@@ -18,8 +17,8 @@ const Item = (props) => {
                     </div>
 
                     <div className="divPreco">
-                        <h5>{props.preco}</h5>
-                        <MdAddShoppingCart />
+                        <h5>R${props.preco}.00</h5>
+                        <MdAddShoppingCart className="iconeComprar" />
                     </div>
                 </div>
             </div>
