@@ -6,6 +6,7 @@
 }
 .produto h3{
     font-size: 1.40em;
+    position: relative;
 }
 
 .divPreco{
@@ -16,4 +17,22 @@
 }
 .divPreco h5{
     margin-right: 1em;
+}
+.displayNone{
+    display: none;
+}
+.mostrar{
+    display: block;
+    position: fixed;
+    width: 60%;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.826);
+    color: #fff;
+    padding: 2em;
+    z-index: 9999;
+    border-radius: 1em;
 }
