@@ -8,6 +8,8 @@ const Produtos = (props) => {
                 return <Item
                     item={item}
                     key={index}
+                    sacola={props.sacola}
+                    carrinho={props.carrinho}
                     imagem={item.img}
                     nome={item.nome}
                     subtitulo={item.subtitulo}
