@@ -36,3 +36,9 @@
     z-index: 9999;
     border-radius: 1em;
 }
+.iconeVoltar{
+    font-size: 2.5em;
+    position: absolute;
+    left: 8%;
+    top: 5%;
+}
