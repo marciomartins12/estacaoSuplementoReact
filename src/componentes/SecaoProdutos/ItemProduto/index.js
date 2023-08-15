@@ -1,6 +1,6 @@
 import { MdAddShoppingCart } from "react-icons/md"
 import "./Item.css"
-import {AiOutlineCloseCircle} from "react-icons/ai"
+import { AiOutlineCloseCircle } from "react-icons/ai"
 const Item = (props) => {
     let mostrar = "";
     return (
@@ -10,7 +10,7 @@ const Item = (props) => {
 
                 <div>
                     <div onClick={(evento) => {
-                        console.log(evento.target.parentElement.parentElement.parentElement.parentElement.querySelector(".displayNone").classList.add("mostrar"))
+                        console.log(evento.target.closest(".produto").querySelector(".displayNone").classList.add("mostrar"))
                     }}>
                         <img src={props.imagem} alt={props.nome} />
                         <h3>{props.nome}</h3>
@@ -24,7 +24,10 @@ const Item = (props) => {
                 </div>
             </div>
             <div className="displayNone">
-                <AiOutlineCloseCircle className="iconeVoltar"/>
+                <AiOutlineCloseCircle onClick={(evento) => {
+                    evento.target.closest(".produto").querySelector(".displayNone").classList.toggle("mostrar")
+
+                }} className="iconeVoltar" />
                 <img src={props.imagem} alt={props.nome} />
                 <h3>{props.nome}</h3>
                 <h4>{props.subtitulo}</h4>
