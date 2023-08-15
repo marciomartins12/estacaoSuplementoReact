@@ -3,4 +3,5 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    gap: .45em;
 }

@@ -1,5 +1,6 @@
 import Produtos from "./componentes/SecaoProdutos";
 import "./App.css"
+import { v4 as uuidv4 } from "uuid"
 function App() {
   const produtos = [
     {
@@ -8,7 +9,7 @@ function App() {
       preco: 170.00,
       descricao: "Adquira o Carnivoro Beef Protein Isolate agora mesmo e aproveite todos os benefícios que ele tem a oferecer. Seja você um atleta profissional, um entusiasta do fitness ou alguém que busca melhorar sua saúde e bem-estar, este suplemento é a escolha certa para você. Invista em sua saúde, invista em qualidade, invista no Carnivoro Beef Protein Isolate!",
       img: "../img/CarnivoroIsolate.png",
-      id: 1,
+      id: uuidv4(),
       classe: "%20%20Carnivoro%20Isolate"
     },
     {
@@ -17,7 +18,7 @@ function App() {
       preco: 170.00,
       descricao: "Não espere mais para investir em sua performance e resultados. Adquira agora mesmo o Whey Protein 80% e experimente a diferença que esse suplemento de qualidade pode fazer em sua vida. Aproveite todos os benefícios de uma proteína premium, comprovada e confiável. Faça a escolha certa, faça a escolha do Whey Protein 80%!",
       img: "../img/WheyProtein80.png",
-      id: 2,
+      id: uuidv4(),
       classe: "%20Whey%20Protein%2080%"
     },
     {
@@ -26,7 +27,7 @@ function App() {
       preco: 90.00,
       descricao: "A vantagem do 3Whey é que você obtém o melhor dos três mundos em um único produto. Essa combinação de proteínas de diferentes velocidades de absorção garante uma liberação prolongada de aminoácidos, o que contribui para a síntese proteica contínua, recuperação muscular otimizada e suporte ao crescimento muscular.",
       img: "../img/3whey.png",
-      id: 3,
+      id: uuidv4(),
       classe: "%203Whey"
     },
     {
@@ -35,7 +36,7 @@ function App() {
       preco: 80.00,
       descricao: "Disparado o melhor dos hipercalóricos disponíveis no mercado, com a maior proporção entre carboidratos e proteínas. Especialmente para aqueles que buscam alcançar a hipertrofia e ganhar massa muscular",
       img: "../img/HiperMass.png",
-      id: 4,
+      id: uuidv4(),
       classe: "%20Hiper Mass"
     },
     {
@@ -44,7 +45,7 @@ function App() {
       preco: 120.00,
       descricao: "Seja você um atleta que deseja melhorar seu desempenho, um praticante de musculação que busca ganho de massa muscular ou alguém que necessita de um aumento de peso saudável, o Anabolic Hipercalórico é a escolha ideal para você.",
       img: "../img/Hipercalorico.png",
-      id: 5,
+      id: uuidv4(),
       classe: "%20HiperCalorico"
     },
     {
@@ -53,7 +54,7 @@ function App() {
       preco: 150.00,
       descricao: "Invista agora mesmo na Creatina Growth e desfrute dos benefícios comprovados que ela pode oferecer. Prepare-se para elevar seus treinos a um novo patamar, aumentar sua força e potência muscular, e alcançar resultados surpreendentes em sua jornada fitness. Faça a escolha inteligente, faça a escolha da Creatina Growth!",
       img: "../img/growth creatina.png",
-      id: 6,
+      id: uuidv4(),
       classe: "%20Creatina%20Growth"
     },
     {
@@ -62,7 +63,7 @@ function App() {
       preco: 140.00,
       descricao: "Prepare-se para experimentar uma explosão muscular e um desempenho máximo com a Creatina Turbo Black Skull. Aumente sua força, potência e resistência, supere seus objetivos e alcance resultados extraordinários.",
       img: "../img/creatina300.png",
-      id: 7,
+      id: uuidv4(),
       classe: "%20Creatina%20300g%20Black%20Skull"
     },
     {
@@ -71,7 +72,7 @@ function App() {
       preco: 85.00,
       descricao: "Prepare-se para experimentar uma explosão muscular e um desempenho máximo com a Creatina Turbo Black Skull. Aumente sua força, potência e resistência, supere seus objetivos e alcance resultados extraordinários.",
       img: "../img/creatina150.png",
-      id: 8,
+      id: uuidv4(),
       classe: "%20Creatina%20150g%20Black%20Skull"
     },
     {
@@ -80,7 +81,7 @@ function App() {
       preco: 60.00,
       descricao: "Além dos benefícios estéticos, o Colágeno Hidrolisado da Max Titanium também é uma excelente opção para quem sofre com dores articulares e problemas nas articulações. A suplementação regular ajuda a melhorar a lubrificação e a flexibilidade das articulações, proporcionando maior conforto e mobilidade para as atividades diárias.",
       img: "../img/colagenHidrolisado.png",
-      id: 9,
+      id: uuidv4(),
       classe: "%20Colagen%20Hidrolisado"
     },
     {
@@ -89,7 +90,7 @@ function App() {
       preco: 75.00,
       descricao: "Prepare-se para experimentar uma explosão de energia, foco aprimorado e desempenho máximo com o Pré-Treino Nuclear Rush. Elevar seus treinos a um novo patamar, superar seus limites e alcançar resultados impressionantes. Faça a escolha poderosa, faça a escolha do Pré-Treino Nuclear Rush para um treino verdadeiramente explosivo!",
       img: "../img/nuclearRush.png",
-      id: 10,
+      id: uuidv4(),
       classe: "%20Nuclar%20Rush"
     },
     {
@@ -98,7 +99,7 @@ function App() {
       preco: 80.00,
       descricao: "Escolha a Pasta de Amendoim Laganexa e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
       img: "../img/chocolateBranco.png",
-      id: 11,
+      id: uuidv4(),
       classe: "%20Pasta%20de%20Amendoim%20sabor%20chocolate%20branco"
     },
     {
@@ -107,7 +108,7 @@ function App() {
       preco: 80.00,
       descricao: "scolha a Pasta de Amendoim Laganexa,possui whey protein em sua composição e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
       img: "../img/leitinho.png",
-      id: 12,
+      id: uuidv4(),
       classe: "%20Pasta%20de%20Amendoim%20%20sabor%20leitinho%20com%20chocolate"
     },
     {
@@ -116,7 +117,7 @@ function App() {
       preco: 80.00,
       descricao: "A Pasta de Amendoim Alaganexa Sabor Doce de Leite com Castanha de Caju é uma opção deliciosa e indulgente para os amantes de sabores doces. Combinando o sabor suave do doce de leite com o crocante das castanhas de caju, essa pasta é uma verdadeira tentação para os sentidos.",
       img: "../img/caju.png",
-      id: 13,
+      id: uuidv4(),
       classe: "%20Pasta%20de%20Amendoim%20sabor%20castanha%20de%20caju"
     },
     {
@@ -125,7 +126,7 @@ function App() {
       preco: 80.00,
       descricao: "A Pasta de Amendoim Alaganexa Sabor Avelã é uma opção deliciosa e indulgente para os amantes de sabores doces. Essa pasta é uma verdadeira tentação para os sentidos.",
       img: "../img/avela.png",
-      id: 14,
+      id: uuidv4(),
       classe: "%20Pasta%20de%20Amendoim%20sabor%20avelã%20"
     },
     {
@@ -134,7 +135,7 @@ function App() {
       preco: 25.00,
       descricao: "Para melhor bater sua suplementação.",
       img: "../img/coqueteleira.png",
-      id: 15,
+      id: uuidv4(),
       classe: "%20Coqueteleira"
     },
 
@@ -143,9 +144,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>EstaçãoSuplemento</h1>
+      <h1>Estação<span>Suplementos</span></h1>
       <Produtos
-      produtos={produtos}
+        produtos={produtos}
       />
     </div>
   );
