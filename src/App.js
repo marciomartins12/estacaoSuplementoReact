@@ -2,6 +2,10 @@ import Produtos from "./componentes/SecaoProdutos";
 import "./App.css"
 import { v4 as uuidv4 } from "uuid"
 import { useState } from "react";
+import Carrinho from "./componentes/botaoCarrinhoDeCompras";
+
+
+
 function App() {
   const [produtos, setProdutos] = useState([
     {
@@ -160,8 +164,10 @@ function App() {
           ? { ...produto, confirmacao: !produto.confirmacao }
           : produto
       ))
-//;
+
   }
+
+
   return (
     <div className="App">
       <h1>Estação<span>Suplementos</span></h1>
@@ -170,6 +176,10 @@ function App() {
         carrinho={enviarParaOCarrinho}
         produtos={produtos}
       />
+      <Carrinho
+      item = {carrinho}
+      />
+
     </div>
   );
 }
