@@ -190,14 +190,21 @@ function trocaMenu(){
 menu={trocaMenu}
 item = {carrinho}
 />
-</div> : console.log("outra pag"))}
+</div> : 
+
+
+
+
       
 <div className="pagCarrinhoDeCompras">
 <PageCompras
 menu={trocaMenu}
 
+produtosDaLista={carrinho}
+
 />
 </div>
+    )}
     </div>
   );
 }
