@@ -3,7 +3,7 @@ import "./App.css"
 import { v4 as uuidv4 } from "uuid"
 import { useState } from "react";
 import Carrinho from "./componentes/botaoCarrinhoDeCompras";
-
+import PageCompras from "./componentes/Carrinho";
 
 
 function App() {
@@ -151,7 +151,13 @@ function App() {
 
   ]);
   const [carrinho, setCarrinho] = useState([])
+const [menu, setMenu]= useState([{
+  menu: true
+}])
 
+function trocaMenu(){
+  setMenu([menu.menu= !menu.menu])
+}
   
   function enviarParaOCarrinho(item) {
     const teste = produtos.filter((p) => p.id === item)
@@ -168,18 +174,30 @@ function App() {
   }
 
 
-  return (
-    <div className="App">
-      <h1>Estação<span>Suplementos</span></h1>
-      <Produtos
-        sacola={carrinho}
-        carrinho={enviarParaOCarrinho}
-        produtos={produtos}
-      />
-      <Carrinho
-      item = {carrinho}
-      />
 
+  return (
+    
+    <div className="App">
+      {menu.map((a)=> a.menu===true? <div>
+
+<h1>Estação<span>Suplementos</span></h1>
+<Produtos
+  sacola={carrinho}
+  carrinho={enviarParaOCarrinho}
+  produtos={produtos}
+  />
+<Carrinho
+menu={trocaMenu}
+item = {carrinho}
+/>
+</div> : console.log("outra pag"))}
+      
+<div className="pagCarrinhoDeCompras">
+<PageCompras
+menu={trocaMenu}
+
+/>
+</div>
     </div>
   );
 }
