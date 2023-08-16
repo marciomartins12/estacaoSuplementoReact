@@ -1,15 +1,14 @@
 import {LiaArrowAltCircleLeftSolid} from "react-icons/lia"
 import ItemCarrinho from "./ItemCarrinho"
 const PageCompras = (props)=>{
-   console.log(props.produtoDaLista)
     return (
         <div>
             <div>
-            <LiaArrowAltCircleLeftSolid color="#fff"/>
+            <LiaArrowAltCircleLeftSolid onClick={()=>{props.trocarMenu()}} color="#fff"/>
                 <div>
-            {props.produtosDaLista.map((item)=>{
-              console.log(item)  
+            {props.produtosDaLista.map((item,index)=>{  
             return <ItemCarrinho
+            key={index}
             nome={item.nome}
             preco={item.preco}
             img ={ item.img}

@@ -151,14 +151,15 @@ function App() {
 
   ]);
   const [carrinho, setCarrinho] = useState([])
-const [menu, setMenu]= useState([{
-  menu: true
-}])
+  const [menu, setMenu] = useState([{
+    menu: true
+  }])
 
-function trocaMenu(){
-  setMenu([menu.menu= !menu.menu])
-}
-  
+  function trocaMenu() {
+    setMenu([menu.menu = false])
+    console.log(menu)
+  }
+
   function enviarParaOCarrinho(item) {
     const teste = produtos.filter((p) => p.id === item)
     const teste2 = carrinho
@@ -176,35 +177,30 @@ function trocaMenu(){
 
 
   return (
-    
+
     <div className="App">
-      {menu.map((a)=> a.menu===true? <div>
+      {menu.map((a, index) => a.menu === true ? <div key={index}>
 
-<h1>Estação<span>Suplementos</span></h1>
-<Produtos
-  sacola={carrinho}
-  carrinho={enviarParaOCarrinho}
-  produtos={produtos}
-  />
-<Carrinho
-menu={trocaMenu}
-item = {carrinho}
-/>
-</div> : 
+        <h1>Estação<span>Suplementos</span></h1>
+        <Produtos
+          sacola={carrinho}
+          carrinho={enviarParaOCarrinho}
+          produtos={produtos}
+        />
+        <Carrinho
+          menu={trocaMenu}
+          item={carrinho}
+        />
+      </div> :
+        <div key={index} className="pagCarrinhoDeCompras">
+          <PageCompras
+            trocarMenu={trocaMenu}
 
+            produtosDaLista={carrinho}
 
-
-
-      
-<div className="pagCarrinhoDeCompras">
-<PageCompras
-menu={trocaMenu}
-
-produtosDaLista={carrinho}
-
-/>
-</div>
-    )}
+          />
+        </div>
+      )}
     </div>
   );
 }
