@@ -2,7 +2,9 @@
 const ItemCarrinho = (props)=> {
      return (
         <div>
-            aaaaaaaa
+            <img src={props.img}/>
+            <h2>{props.nome}</h2>
+            <span>{props.preco}</span>
         </div>
      )
 }
