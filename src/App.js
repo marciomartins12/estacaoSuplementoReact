@@ -153,15 +153,10 @@ function App() {
   const [carrinho, setCarrinho] = useState([])
   const [menu, setMenu] = useState(1)
 
-  function trocaMenu() {
-    setMenu(0)
-    console.log(menu)
+  function trocaMenu(valor) {
+    setMenu(valor)
   }
-  function trocaMenu0() {
-    setMenu(1)
-    console.log(menu)
-  }
-
+  
   function enviarParaOCarrinho(item) {
     const teste = produtos.filter((p) => p.id === item)
     const teste2 = carrinho
@@ -196,7 +191,7 @@ function App() {
       </div>) :
        ( <div className="pagCarrinhoDeCompras">
           <PageCompras
-            trocarMenu={trocaMenu0}
+            trocarMenu={trocaMenu}
 
             produtosDaLista={carrinho}
 

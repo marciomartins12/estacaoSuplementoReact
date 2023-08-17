@@ -4,7 +4,7 @@ import "./Carrinho.css"
 const Carrinho = (props)=>{
     return (
         <div onClick={()=>{
-            props.menu()
+            props.menu(0)
         }}>
             <BiCartAlt className="carro"/>
 {props.item.length > 0 ? <FcPlus className="adCarro"/>: ""} 
