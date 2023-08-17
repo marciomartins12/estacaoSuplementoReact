@@ -171,6 +171,12 @@ function App() {
 
   }
 
+  function removerItemDaLista(id){
+    setCarrinho(carrinho.filter((item)=> item.id != id))
+    console.log(carrinho)
+    
+  }
+
 
 
   return (
@@ -192,7 +198,7 @@ function App() {
        ( <div className="pagCarrinhoDeCompras">
           <PageCompras
             trocarMenu={trocaMenu}
-
+            remover={removerItemDaLista}
             produtosDaLista={carrinho}
 
           />

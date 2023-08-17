@@ -8,10 +8,10 @@ const ItemCarrinho = (props) => {
             </div>
             <div className="div">
                 <h2>{props.nome}</h2>
-                <h3>{props.preco}</h3>
+                <h3>R${props.preco}.00</h3>
             </div>
                 <div className="icone">
-                    <RiCloseCircleLine />
+                    <RiCloseCircleLine  onClick={()=> props.removerItemDaLista(props.id)}/>
                 </div>
 
         </div>
