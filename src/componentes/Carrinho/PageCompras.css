@@ -9,3 +9,38 @@
     margin: 0.25em 0 .30em 0.30em;
     font-size: 1.5em;
 }
+
+.btn-enviar {
+    font-size: .85em;
+    background-color: rgb(40, 244, 18);
+    border: none;
+    color: aliceblue;
+    border-radius: .45em;
+    align-items: center;
+    padding: .35em;
+    gap: .35em;
+    display: flex;
+    position: fixed;
+    top: 94%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.btn-enviar .icon-enviar {
+    font-size: 1.5em;
+}
+.valorTotal{
+    order: none;
+    color: aliceblue;
+    border-radius: .45em;
+    align-items: center;
+    padding: .35em;
+    gap: .35em;
+    display: flex;
+    position: fixed;
+    top: 94%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

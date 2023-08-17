@@ -7,9 +7,9 @@
     top: 93%;
     left: 83%;
     transform: translate(-50%, -50%);
+    z-index: 9999;
     background-color: rgba(59, 140, 9, 0.9);
     padding: 0.20em;
-    z-index: 9999;
     border-radius: 1em;
 }
 .adCarro{

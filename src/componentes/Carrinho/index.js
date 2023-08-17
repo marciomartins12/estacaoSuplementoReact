@@ -1,7 +1,9 @@
 import { LiaArrowAltCircleLeftSolid } from "react-icons/lia"
+import { BsWhatsapp } from "react-icons/bs"
 import ItemCarrinho from "./ItemCarrinho"
 import "./PageCompras.css"
 const PageCompras = (props) => {
+    let soma = 0 ; 
     return (
         <div className="container-p">
             <LiaArrowAltCircleLeftSolid className="i" onClick={() => { 
@@ -25,10 +27,12 @@ const PageCompras = (props) => {
                     })}
 
                    {props.produtosDaLista.length > 0? (<div>
-                        <button>
-                        enviar
+                        <button className="btn-enviar">
+                        Enviar <BsWhatsapp className="icon-enviar"/>
                         </button>
-                    </div>):""}
+                        <div className="valorTotal">R${props.produtosDaLista.reduce((a, b)=>b.preco + a ,0 
+                         )}.00</div>
+                    </div>):<></>}
                             
                 </div>
 
