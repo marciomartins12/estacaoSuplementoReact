@@ -1,19 +1,20 @@
 import "./ItensCompras.css"
-const ItemCarrinho = (props)=> {
-     return (
+import { RiCloseCircleLine } from "react-icons/ri"
+const ItemCarrinho = (props) => {
+    return (
         <div className="containerItemCarrinhoDeCompras">
             <div>
-            <img src={props.img}/>
+                <img src={props.img} />
             </div>
-                <div>
-            <h2>{props.nome}</h2>
-            <span>{props.preco}</span>
-                    <div>
-
-                    </div>
+            <div className="div">
+                <h2>{props.nome}</h2>
+                <h3>{props.preco}</h3>
+            </div>
+                <div className="icone">
+                    <RiCloseCircleLine />
                 </div>
 
         </div>
-     )
+    )
 }
 export default ItemCarrinho

@@ -1,3 +1,18 @@
 .containerItemCarrinhoDeCompras{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    align-items: center;
+    font-size: 0.65em;
+    margin-bottom:.45em ;
+    border:  1px solid white;
+}
+.containerItemCarrinhoDeCompras img{
+    width: 110px;
+    height: auto;
+}
+.containerItemCarrinhoDeCompras .div{
     display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }

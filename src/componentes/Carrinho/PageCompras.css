@@ -1,0 +1,11 @@
+.div-item-i {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container-p .i {
+    margin: 0.25em 0 .30em 0.30em;
+    font-size: 1.5em;
+}
