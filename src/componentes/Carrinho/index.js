@@ -26,8 +26,8 @@ const PageCompras = (props) => {
                         />
                     })}
 
-                   {props.produtosDaLista.length > 0? (<div>
-                        <button className="btn-enviar">
+                   {props.produtosDaLista.length > 0? (<div >
+                        <button className="btn-enviar" onClick={()=>props.enviarParaOWhatsapp()}>
                         Enviar <BsWhatsapp className="icon-enviar"/>
                         </button>
                         <div className="valorTotal">R${props.produtosDaLista.reduce((a, b)=>b.preco + a ,0 

@@ -156,7 +156,7 @@ function App() {
   function trocaMenu(valor) {
     setMenu(valor)
   }
-  
+
   function enviarParaOCarrinho(item) {
     const teste = produtos.filter((p) => p.id === item)
     const teste2 = carrinho
@@ -171,10 +171,18 @@ function App() {
 
   }
 
-  function removerItemDaLista(id){
-    setCarrinho(carrinho.filter((item)=> item.id != id))
-    console.log(carrinho)
+  function removerItemDaLista(id) {
+    setCarrinho(carrinho.filter((item) => item.id != id))
+  }
+
+  function enviarParaOWhatsapp() {
+    let textpadrao = "https://api.whatsapp.com/send?phone=55989810024736&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20"
+    let textoDosItens = carrinho.map((item) => item.classe)
+    let valorTotal =`%20 Com%20Valor%20Total%20de: R$${carrinho.reduce((a, b) => b.preco + a, 0)}.00`;
     
+    textpadrao += textoDosItens 
+    textpadrao+= valorTotal
+    window.location.href = textpadrao
   }
 
 
@@ -182,7 +190,7 @@ function App() {
   return (
 
     <div className="App">
-      {(menu === 1 )? (<div>
+      {(menu === 1) ? (<div>
 
         <h1>Estação<span>Suplementos</span></h1>
         <Produtos
@@ -195,15 +203,15 @@ function App() {
           item={carrinho}
         />
       </div>) :
-       ( <div className="pagCarrinhoDeCompras">
+        (<div className="pagCarrinhoDeCompras">
           <PageCompras
             trocarMenu={trocaMenu}
             remover={removerItemDaLista}
             produtosDaLista={carrinho}
-
+            enviarParaOWhatsapp={enviarParaOWhatsapp}
           />
         </div>)}
-      
+
     </div>
   );
 }
