@@ -176,16 +176,11 @@ function App() {
   }
 
   function enviarParaOWhatsapp() {
-    let textpadrao = "https://api.whatsapp.com/send?phone=55989810024736&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20"
-    let textoDosItens = carrinho.map((item) => item.classe)
-    let valorTotal =`%20 Com%20Valor%20Total%20de: R$${carrinho.reduce((a, b) => b.preco + a, 0)}.00`;
-    
-    textpadrao += textoDosItens 
-    textpadrao+= valorTotal
-    window.location.href = textpadrao
+    let textEnviarParaWhatasapp = `https://api.whatsapp.com/send?phone=5598981024736&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20${carrinho.map((item) => item.classe)}%20 Com%20Valor%20Total%20de: R$${carrinho.reduce((a, b) => b.preco + a, 0)}.00`
+   
+    window.location.href = textEnviarParaWhatasapp;
+
   }
-
-
 
   return (
 
