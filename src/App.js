@@ -151,12 +151,14 @@ function App() {
 
   ]);
   const [carrinho, setCarrinho] = useState([])
-  const [menu, setMenu] = useState([{
-    menu: true
-  }])
+  const [menu, setMenu] = useState(1)
 
   function trocaMenu() {
-    setMenu([menu.menu = false])
+    setMenu(0)
+    console.log(menu)
+  }
+  function trocaMenu0() {
+    setMenu(1)
     console.log(menu)
   }
 
@@ -179,7 +181,7 @@ function App() {
   return (
 
     <div className="App">
-      {menu.map((a, index) => a.menu === true ? <div key={index}>
+      {(menu === 1 )? (<div>
 
         <h1>Estação<span>Suplementos</span></h1>
         <Produtos
@@ -191,16 +193,16 @@ function App() {
           menu={trocaMenu}
           item={carrinho}
         />
-      </div> :
-        <div key={index} className="pagCarrinhoDeCompras">
+      </div>) :
+       ( <div className="pagCarrinhoDeCompras">
           <PageCompras
-            trocarMenu={trocaMenu}
+            trocarMenu={trocaMenu0}
 
             produtosDaLista={carrinho}
 
           />
-        </div>
-      )}
+        </div>)}
+      
     </div>
   );
 }
