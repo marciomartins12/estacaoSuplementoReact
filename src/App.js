@@ -172,7 +172,7 @@ function App() {
   }
 
   function removerItemDaLista(id) {
-    setCarrinho(carrinho.filter((item) => item.id != id))
+    setCarrinho(carrinho.filter((item) => item.id !== id))
   }
 
   function enviarParaOWhatsapp() {
