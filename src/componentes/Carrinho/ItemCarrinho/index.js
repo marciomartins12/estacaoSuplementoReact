@@ -4,7 +4,7 @@ const ItemCarrinho = (props) => {
     return (
         <div className="containerItemCarrinhoDeCompras">
             <div>
-                <img src={props.img} />
+                <img src={props.img} alt={props.nome} />
             </div>
             <div className="div">
                 <h2>{props.nome}</h2>
