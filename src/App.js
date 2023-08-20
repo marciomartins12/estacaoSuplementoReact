@@ -1,7 +1,7 @@
 import Produtos from "./componentes/SecaoProdutos";
 import "./App.css"
 import { v4 as uuidv4 } from "uuid"
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Carrinho from "./componentes/botaoCarrinhoDeCompras";
 import PageCompras from "./componentes/Carrinho";
 
@@ -172,42 +172,45 @@ function App() {
   }
 
   function removerItemDaLista(id) {
-    setCarrinho(carrinho.filter((item) => item.id !== id))
+    setCarrinho(carrinho.filter((item) => item.id != id))
   }
 
   function enviarParaOWhatsapp() {
     let textEnviarParaWhatasapp = `https://api.whatsapp.com/send?phone=5598981024732&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20${carrinho.map((item) => item.classe)}%20 Com%20Valor%20Total%20de: R$${carrinho.reduce((a, b) => b.preco + a, 0)}.00`
-   
+
     window.location.href = textEnviarParaWhatasapp;
 
   }
 
   return (
+    <Fragment>
 
-    <div className="App">
-      {(menu === 1) ? (<div>
+      <div className="App">
+        {(menu === 1) ? (<div>
 
-        <h1>Estação<span>Suplementos</span></h1>
-        <Produtos
-          sacola={carrinho}
-          carrinho={enviarParaOCarrinho}
-          produtos={produtos}
-        />
-        <Carrinho
-          menu={trocaMenu}
-          item={carrinho}
-        />
-      </div>) :
-        (<div className="pagCarrinhoDeCompras">
-          <PageCompras
-            trocarMenu={trocaMenu}
-            remover={removerItemDaLista}
-            produtosDaLista={carrinho}
-            enviarParaOWhatsapp={enviarParaOWhatsapp}
+          <h1>Estação<span>Suplementos</span></h1>
+          <Produtos
+            sacola={carrinho}
+            carrinho={enviarParaOCarrinho}
+            produtos={produtos}
           />
-        </div>)}
+          <Carrinho
+            menu={trocaMenu}
+            item={carrinho}
+          />
+        </div>) :
+          (<div className="pagCarrinhoDeCompras">
+            <PageCompras
+              trocarMenu={trocaMenu}
+              remover={removerItemDaLista}
+              produtosDaLista={carrinho}
+              enviarParaOWhatsapp={enviarParaOWhatsapp}
+            />
+          </div>)}
 
-    </div>
+      </div>
+      <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba resposivo para algum celular.</p>
+    </Fragment>
   );
 }
 

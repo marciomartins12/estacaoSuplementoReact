@@ -17,3 +17,18 @@
     font-size: 2em;
     color: white;
 }
+.pc{
+    display:none;
+}
+@media screen and (min-width: 1000px){
+    .App{
+        display: none;
+    }
+    .pc{
+        display: block;
+        color: white;
+        font-size:6em;
+        text-align: center;
+        margin-top: 10%;
+    }
+}
