@@ -20,7 +20,7 @@
 .pc{
     display:none;
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 500px){
     .App{
         display: none;
     }
