@@ -3,7 +3,6 @@ import { BsWhatsapp } from "react-icons/bs"
 import ItemCarrinho from "./ItemCarrinho"
 import "./PageCompras.css"
 const PageCompras = (props) => {
-console.log(props.produtosDaLista.length)
     return (
         <div className="container-p">
             <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
