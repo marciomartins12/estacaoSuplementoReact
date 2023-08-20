@@ -3,7 +3,7 @@ import { BsWhatsapp } from "react-icons/bs"
 import ItemCarrinho from "./ItemCarrinho"
 import "./PageCompras.css"
 const PageCompras = (props) => {
-    let soma = 0 ; 
+  
     return (
         <div className="container-p">
             <LiaArrowAltCircleLeftSolid className="i" onClick={() => { 
