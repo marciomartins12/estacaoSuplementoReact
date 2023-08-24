@@ -1,3 +1,8 @@
+.container-p {
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+}
+
 .div-item-i {
     display: flex;
     flex-direction: column;
@@ -13,9 +18,13 @@
 .container-p .h {
     display: flex;
     align-items: center;
+    margin-top: .85em;
+    margin-bottom: 1em;
 }
-.container-p h4{
-    margin-left: .45em;
+
+.container-p h4 {
+    text-align: center;
+    width: 75%;
 }
 
 .btn-enviar {
