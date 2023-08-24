@@ -19,7 +19,7 @@ function App() {
       classe: "%20%20Carnivoro%20Isolate"
     },
     {
-      nome: "Whey Protein 80%",
+      nome: "Whey Protein",
       subtitulo: "Growth 1kg",
       preco: 170.00,
       descricao: "Não espere mais para investir em sua performance e resultados. Adquira agora mesmo o Whey Protein 80% e experimente a diferença que esse suplemento de qualidade pode fazer em sua vida. Aproveite todos os benefícios de uma proteína premium, comprovada e confiável. Faça a escolha certa, faça a escolha do Whey Protein 80%!",

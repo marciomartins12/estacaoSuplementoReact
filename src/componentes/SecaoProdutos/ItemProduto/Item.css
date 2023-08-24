@@ -1,18 +1,24 @@
+
 .produto {
     flex: 1;
     color: white;
     border-radius: .45em;
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
+
 }
 
 .produto h3 {
     font-size: 1.40em;
     position: relative;
+    font-family: 'REM', sans-serif;
+    font-weight: 400;
 }
 
 .produto h4 {
     color: rgb(10, 134, 10);
     margin-bottom: .45em;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
 }
 
 .divPreco {
@@ -26,11 +32,13 @@
 
 .divPreco h5 {
     color: black;
-    padding: .45em;
+    padding: .35em;
+    margin-right: .25em;
     border-radius: .48em;
     background-color: yellow;
-    margin-right: 1em;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
 }
 
 .divPreco .iconeComprar {
