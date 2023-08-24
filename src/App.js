@@ -209,7 +209,7 @@ function App() {
           </div>)}
 
       </div>
-      <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba resposivo para algum celular.</p>
+      <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba responsivo para algum celular.</p>
     </Fragment>
   );
 }
