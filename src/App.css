@@ -1,33 +1,44 @@
-.App{
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=REM:wght@400;700&family=Source+Code+Pro&display=swap');
+
+.App {
     background-color: rgb(0, 0, 0);
+   
 }
-.App h1{
+
+.App h1 {
     color: white;
     text-align: center;
     font-size: 2em;
-    padding-top: 1em;
-    padding-bottom: .1em;
+    padding: 1em 1em .20em 1em;
     background-color: black;
     margin-bottom: 1em;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    
 }
-.App span{
+
+.App span {
     color: rgb(64, 255, 0);
 }
-.pagCarrinhoDeCompras{
+
+.pagCarrinhoDeCompras {
     font-size: 2em;
     color: white;
 }
-.pc{
-    display:none;
+
+.pc {
+    display: none;
 }
-@media screen and (min-width: 500px){
-    .App{
+
+@media screen and (min-width: 500px) {
+    .App {
         display: none;
     }
-    .pc{
+
+    .pc {
         display: block;
         color: white;
-        font-size:6em;
+        font-size: 6em;
         text-align: center;
         margin-top: 10%;
     }
