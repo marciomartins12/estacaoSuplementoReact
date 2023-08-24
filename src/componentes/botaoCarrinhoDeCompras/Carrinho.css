@@ -1,5 +1,5 @@
-.carro{
-    font-size: 4em;
+.carro {
+    font-size: 3.87em;
     color: #fff;
     position: fixed;
     align-items: center;
@@ -12,7 +12,8 @@
     padding: 0.20em;
     border-radius: 1em;
 }
-.adCarro{
+
+.adCarro {
     font-size: 2em;
     color: #fff;
     position: fixed;
@@ -21,7 +22,24 @@
     top: 89%;
     left: 90%;
     transform: translate(-50%, -50%);
-    
+
     z-index: 9999;
     border-radius: 1em;
+}
+
+.comp {
+    font-size: 1em;
+    color: #fff;
+    position: fixed;
+    align-items: center;
+    position: fixed;
+    top: 98%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgb(2, 153, 17);
+    padding: .10em;
+    border-radius: 0.45em;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
 }

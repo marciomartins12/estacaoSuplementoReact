@@ -5,14 +5,19 @@ import "./PageCompras.css"
 const PageCompras = (props) => {
     return (
         <div className="container-p">
-            <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
-                if (props.produtosDaLista.length > 0) {
+            <div className="h">
 
-                } else {
-                    window.location.reload()
-                }
-                props.trocarMenu(+1)
-            }} color="#fff" />
+                <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
+                    if (props.produtosDaLista.length > 0) {
+
+                    } else {
+                        window.location.reload()
+                    }
+                    props.trocarMenu(+1)
+                }} color="#fff" />
+                <h4>Carrinho d<span>e Compras</span></h4>
+
+            </div>
             <div className=" div-item-i">
 
                 {props.produtosDaLista.length <= 0 ?

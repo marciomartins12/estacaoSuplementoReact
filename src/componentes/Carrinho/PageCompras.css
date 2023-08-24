@@ -10,6 +10,14 @@
     font-size: 1.5em;
 }
 
+.container-p .h {
+    display: flex;
+    align-items: center;
+}
+.container-p h4{
+    margin-left: .45em;
+}
+
 .btn-enviar {
     font-size: .85em;
     background-color: rgb(40, 244, 18);
@@ -30,7 +38,8 @@
 .btn-enviar .icon-enviar {
     font-size: 1.5em;
 }
-.valorTotal{
+
+.valorTotal {
     order: none;
     color: aliceblue;
     border-radius: .45em;
@@ -44,7 +53,8 @@
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
-.semNadaNoCarrinho{
+
+.semNadaNoCarrinho {
     margin-top: 20%;
     color: #900;
     font-weight: 900;

@@ -1,14 +1,14 @@
-import {BiCartAlt} from "react-icons/bi"
-import {FcPlus} from "react-icons/fc"
+import { BiCartAlt } from "react-icons/bi"
+import { FcPlus } from "react-icons/fc"
 import "./Carrinho.css"
-const Carrinho = (props)=>{
+const Carrinho = (props) => {
     return (
-        <div onClick={()=>{
+        <div onClick={() => {
             props.menu(0)
         }}>
-            <BiCartAlt className="carro"/>
-{props.item.length > 0 ? <FcPlus className="adCarro"/>: ""} 
-
+            <BiCartAlt className="carro" />
+            {props.item.length > 0 ? <FcPlus className="adCarro" /> : ""}
+            <p className="comp">Carrinho</p>
         </div>
     )
 }

@@ -6,6 +6,10 @@
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
 
 }
+.produto img{
+    padding-top: 1em ;
+    margin-bottom: .45em;
+}
 
 .produto h3 {
     font-size: 1.40em;
@@ -103,11 +107,6 @@ animation:moviment .45s;
 
 
 
-
-
-
-
-
 .mostrar {
     display: block;
     position: fixed;
@@ -122,6 +121,8 @@ animation:moviment .45s;
     padding: 2em;
     z-index: 9999;
     border-radius: 1em;
+    font-family: 'REM', sans-serif;
+    font-weight: 400;
 }
 
 .iconeVoltar {
