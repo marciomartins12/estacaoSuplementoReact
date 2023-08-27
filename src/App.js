@@ -240,7 +240,7 @@ function App() {
             />
           </section>)}
       </main>
-      <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba responsivo para algum celular.</p>
+      <p className="pc"> Somente no mobile. (pc abra o devtools e coloque responsivo para algum mobile)</p>
     </Fragment>
   );
 }
