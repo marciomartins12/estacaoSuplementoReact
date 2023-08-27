@@ -2,7 +2,7 @@
 
 .App {
     background-color: rgb(0, 0, 0);
-   
+
 }
 
 .App h1 {
@@ -14,7 +14,7 @@
     margin-bottom: 1em;
     font-family: 'REM', sans-serif;
     font-weight: 700;
-    
+
 }
 
 .App span {
@@ -43,7 +43,8 @@
         margin-top: 10%;
     }
 }
-.App .footer-loja{
+
+.App .footer-loja {
     font-family: 'REM', sans-serif;
     font-weight: 700;
     font-size: 1.50em;
@@ -52,6 +53,31 @@
     background-color: black;
     padding: 1em 0;
 }
-.App .footer-loja span{
-    color: rgb(64, 255, 0) ;
+
+.App .footer-loja span {
+    color: rgb(64, 255, 0);
+}
+
+.App .sectionInicial {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+}
+.App .sectionInicial{
+    height: 100vh;
+}
+.App .sectionInicial img {
+    width: 300px;
+    height: auto;
+    margin-top: 2.5em;
+}
+
+.App .sectionInicial a {
+    text-decoration: none;
+    color: inherit;
+}
+.App .sectionInicial li{
+    display: flex;
 }

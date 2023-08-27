@@ -8,7 +8,7 @@ const PageCompras = (props) => {
             <div className="h">
 
                 <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
-                    props.trocarMenu(+1)
+                    props.trocarMenu(1)
                 }} color="#fff" />
                 <h4>Carrinho d<span>e Compras</span></h4>
 

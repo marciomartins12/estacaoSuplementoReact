@@ -215,6 +215,7 @@ function App() {
     <Fragment>
 
       <main className="App">
+        
         {(menu === 1) ? (<section>
 
           <h1>Estação<span>Suplementos</span></h1>
