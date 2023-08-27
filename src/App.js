@@ -181,18 +181,27 @@ function App() {
     const teste = produtos.filter((p) => p.id === item)
     const teste2 = carrinho
     setCarrinho([...teste2, ...teste])
-console.log(teste, teste2);
+
+
     setProdutos((prevProdutos) =>
       prevProdutos.map((produto) =>
         produto.id === item
           ? { ...produto, confirmacao: !produto.confirmacao }
           : produto
-      ))
+      ));
 
   }
 
   function removerItemDaLista(id) {
-    setCarrinho(carrinho.filter((item) => item.id !== id))
+    setCarrinho(carrinho.filter((item) => item.id !== id));
+
+    setProdutos((prevProdutos) =>
+      prevProdutos.map((produto) =>
+        produto.id === id
+          ? { ...produto, confirmacao: !produto.confirmacao }
+          : produto
+      ));
+     
   }
 
   function enviarParaOWhatsapp() {
@@ -221,6 +230,7 @@ console.log(teste, teste2);
         </section>) :
           (<section className="pagCarrinhoDeCompras">
             <PageCompras
+
               trocarMenu={trocaMenu}
               remover={removerItemDaLista}
               produtosDaLista={carrinho}
