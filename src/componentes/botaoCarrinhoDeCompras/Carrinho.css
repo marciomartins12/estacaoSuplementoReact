@@ -44,3 +44,21 @@
     font-family: 'REM', sans-serif;
     font-weight: 700;
 }
+@media screen and (min-width : 600px){
+    .carro {
+        top: 90%;
+        left: 83%;
+       
+    }
+    
+    .adCarro {
+        top: 86%;
+        left: 88%;
+    }
+    
+    .comp {
+        top: 94%;
+        left: 83%;
+        
+    }
+}
