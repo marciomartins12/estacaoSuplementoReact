@@ -1,4 +1,4 @@
-import { MdAddShoppingCart } from "react-icons/md"
+import { BsFillCartPlusFill } from "react-icons/bs"
 import "./Item.css"
 import {MdOutlineDone} from "react-icons/md"
 import { AiOutlineCloseCircle } from "react-icons/ai"
@@ -23,7 +23,7 @@ const Item = (props) => {
                         {props.confirmacao?
                         <MdOutlineDone  color="#090"
                         className="iconeConfirmado"/>:
-                        <MdAddShoppingCart 
+                        <BsFillCartPlusFill color="#B1FF96 "
                         onClick={()=>{
                             
                             props.carrinho(props.id)
