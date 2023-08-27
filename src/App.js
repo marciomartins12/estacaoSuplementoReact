@@ -205,8 +205,8 @@ function App() {
   return (
     <Fragment>
 
-      <div className="App">
-        {(menu === 1) ? (<div>
+      <main className="App">
+        {(menu === 1) ? (<section>
 
           <h1>Estação<span>Suplementos</span></h1>
           <Produtos
@@ -218,17 +218,17 @@ function App() {
             menu={trocaMenu}
             item={carrinho}
           />
-        </div>) :
-          (<div className="pagCarrinhoDeCompras">
+        </section>) :
+          (<section className="pagCarrinhoDeCompras">
             <PageCompras
               trocarMenu={trocaMenu}
               remover={removerItemDaLista}
               produtosDaLista={carrinho}
               enviarParaOWhatsapp={enviarParaOWhatsapp}
             />
-          </div>)}
+          </section>)}
 
-      </div>
+      </main>
       <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba responsivo para algum celular.</p>
     </Fragment>
   );

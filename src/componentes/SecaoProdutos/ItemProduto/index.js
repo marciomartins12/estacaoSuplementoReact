@@ -6,7 +6,7 @@ const Item = (props) => {
     
     return (
 
-        <div className="produto">
+        <li className="produto">
             <div>
                 <div>
                     <div onClick={(evento) => {
@@ -32,6 +32,8 @@ const Item = (props) => {
                     </div>
                 </div>
             </div>
+
+            {/* botao de voltar e abrindo descrição de produto... */}
             <div className="displayNone">
                 <AiOutlineCloseCircle onClick={(evento) => {
                     evento.target.closest(".produto").querySelector(".displayNone").classList.toggle("mostrar")
@@ -43,7 +45,7 @@ const Item = (props) => {
                 <p>{props.descricao}</p>
             </div>
 
-        </div>
+        </li>
 
     )
 }

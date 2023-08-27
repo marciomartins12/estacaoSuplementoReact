@@ -3,7 +3,7 @@ import "./Produtos.css"
 const Produtos = (props) => {
 
     return (
-        <div className="div-produtos">
+        <ul className="div-produtos">
             {props.produtos.map((item, index) => {
                 return <Item
                     id={item.id}
@@ -20,7 +20,7 @@ const Produtos = (props) => {
                 />
             }
             )}
-        </div>
+        </ul>
     )
 }
 
