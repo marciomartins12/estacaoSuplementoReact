@@ -4,13 +4,13 @@
     position: fixed;
     align-items: center;
     position: fixed;
-    top: 93%;
+    top: 90%;
     left: 83%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: rgba(59, 140, 9, 0.9);
+    background-color:  rgb(2, 153, 17);
     padding: 0.20em;
-    border-radius: 1em;
+    border-radius: 1em ;
 }
 
 .adCarro {
@@ -19,7 +19,7 @@
     position: fixed;
     align-items: center;
     position: fixed;
-    top: 89%;
+    top: 86%;
     left: 90%;
     transform: translate(-50%, -50%);
 
@@ -28,18 +28,19 @@
 }
 
 .comp {
+    
     font-size: 1em;
     color: #fff;
     position: fixed;
     align-items: center;
     position: fixed;
-    top: 98%;
+    top: 94%;
     left: 83%;
     transform: translate(-50%, -50%);
     z-index: 9999;
     background-color: rgb(2, 153, 17);
     padding: .10em;
-    border-radius: 0.45em;
+    border-radius: 0.30em  0.30em  0.45em  0.45em;
     font-family: 'REM', sans-serif;
     font-weight: 700;
 }

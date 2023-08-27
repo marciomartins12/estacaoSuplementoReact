@@ -43,3 +43,15 @@
         margin-top: 10%;
     }
 }
+.App .footer-loja{
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    font-size: 1.50em;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    padding: 1em 0;
+}
+.App .footer-loja span{
+    color: rgb(64, 255, 0) ;
+}

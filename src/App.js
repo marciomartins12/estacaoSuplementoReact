@@ -227,6 +227,7 @@ function App() {
             menu={trocaMenu}
             item={carrinho}
           />
+            <footer className="footer-loja"><p>Loja com excelência em <span>suplementos</span></p></footer>
         </section>) :
           (<section className="pagCarrinhoDeCompras">
             <PageCompras
@@ -237,7 +238,6 @@ function App() {
               enviarParaOWhatsapp={enviarParaOWhatsapp}
             />
           </section>)}
-
       </main>
       <p className="pc"> Somente no mobile. por favor entre com o celular ou coloque na aba responsivo para algum celular.</p>
     </Fragment>

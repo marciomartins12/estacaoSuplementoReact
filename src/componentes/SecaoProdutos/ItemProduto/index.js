@@ -23,7 +23,7 @@ const Item = (props) => {
                         {props.confirmacao?
                         <MdOutlineDone  color="#090"
                         className="iconeConfirmado"/>:
-                        <BsFillCartPlusFill color="#B1FF96 "
+                        <BsFillCartPlusFill color="#FFF"
                         onClick={()=>{
                             
                             props.carrinho(props.id)
