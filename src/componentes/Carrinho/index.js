@@ -8,11 +8,6 @@ const PageCompras = (props) => {
             <div className="h">
 
                 <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
-                    if (props.produtosDaLista.length > 0) {
-
-                    } else {
-                        window.location.reload()
-                    }
                     props.trocarMenu(+1)
                 }} color="#fff" />
                 <h4>Carrinho d<span>e Compras</span></h4>
