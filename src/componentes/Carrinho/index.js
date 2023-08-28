@@ -2,14 +2,13 @@ import { LiaArrowAltCircleLeftSolid } from "react-icons/lia"
 import { BsWhatsapp } from "react-icons/bs"
 import ItemCarrinho from "./ItemCarrinho"
 import "./PageCompras.css"
+import { Link } from "react-router-dom"
 const PageCompras = (props) => {
     return (
         <div className="container-p">
             <div className="h">
 
-                <LiaArrowAltCircleLeftSolid className="i" onClick={() => {
-                    props.trocarMenu(1)
-                }} color="#fff" />
+                <Link to={"/"}><LiaArrowAltCircleLeftSolid className="i"  color="#fff" /></Link>
                 <h4>Carrinho d<span>e Compras</span></h4>
 
             </div>

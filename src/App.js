@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid"
 import { Fragment, useState } from "react";
 import Carrinho from "./componentes/botaoCarrinhoDeCompras";
 import PageCompras from "./componentes/Carrinho";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
@@ -97,8 +98,8 @@ function App() {
       id: uuidv4(),
       confirmacao: false,
       classe: "%20CreatinaMax%20Titanium%20150g"
-  },
-  {
+    },
+    {
       nome: "Creatina Black skull",
       subtitulo: " 100% pura",
       preco: 100.00,
@@ -107,7 +108,7 @@ function App() {
       id: uuidv4(),
       confirmacao: false,
       classe: "%20Creatina%20Max%20Black%20Skull%20100%%20pura"
-  },
+    },
     {
       nome: "Colageno Hidrolisado",
       subtitulo: "Max Titanium",
@@ -171,11 +172,9 @@ function App() {
 
   ]);
   const [carrinho, setCarrinho] = useState([])
-  const [menu, setMenu] = useState(1)
+  
 
-  function trocaMenu(valor) {
-    setMenu(valor)
-  }
+ 
 
   function enviarParaOCarrinho(item) {
     const teste = produtos.filter((p) => p.id === item)
@@ -201,7 +200,7 @@ function App() {
           ? { ...produto, confirmacao: !produto.confirmacao }
           : produto
       ));
-     
+
   }
 
   function enviarParaOWhatsapp() {
@@ -215,30 +214,38 @@ function App() {
     <Fragment>
 
       <main className="App">
-        
-        {(menu === 1) ? (<section>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={
+              <section>
 
-          <h1>Estação<span>Suplementos</span></h1>
-          <Produtos
-            sacola={carrinho}
-            carrinho={enviarParaOCarrinho}
-            produtos={produtos}
-          />
-          <Carrinho
-            menu={trocaMenu}
-            item={carrinho}
-          />
-            <footer className="footer-loja"><p>Loja com excelência em <span>suplementos</span></p></footer>
-        </section>) :
-          (<section className="pagCarrinhoDeCompras">
-            <PageCompras
+                <h1>Estação<span>Suplementos</span></h1>
+                <Produtos
+                  sacola={carrinho}
+                  carrinho={enviarParaOCarrinho}
+                  produtos={produtos}
+                />
+                <Carrinho
+                  item={carrinho}
+                />
+                <footer className="footer-loja"><p>Loja com excelência em <span>suplementos</span></p></footer>
+              </section>}
+/>
+              <Route path="/carrinhodecompras" element={
+                <section className="pagCarrinhoDeCompras">
+                  <PageCompras
+                    remover={removerItemDaLista}
+                    produtosDaLista={carrinho}
+                    enviarParaOWhatsapp={enviarParaOWhatsapp}
+                  />
+                </section>}
+              />
+           
+          </Routes>
+        </BrowserRouter>
 
-              trocarMenu={trocaMenu}
-              remover={removerItemDaLista}
-              produtosDaLista={carrinho}
-              enviarParaOWhatsapp={enviarParaOWhatsapp}
-            />
-          </section>)}
+
+
       </main>
       <p className="pc"> Somente no mobile. (pc abra o devtools e coloque responsivo para algum mobile)</p>
     </Fragment>
