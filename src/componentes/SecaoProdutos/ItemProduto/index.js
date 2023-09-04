@@ -34,12 +34,11 @@ const Item = (props) => {
             </div>
 
             {/* botao de voltar e abrindo descrição de produto... */}
-            <div className="overlay">
-                <div className="displayNone">
+            <div className="displayNone">
+                <div className="mostrarItem">
 
                     <AiOutlineCloseCircle onClick={(evento) => {
-                        evento.target.closest(".produto").querySelector(".displayNone").classList.toggle("mostrar")
-                        console.log(evento.target.parentElement.parentElement)
+                        evento.target.closest(".produto").querySelector(".displayNone").classList.toggle("mostrar");
                     }} className="iconeVoltar" />
                     <img src={props.imagem} alt={props.nome} />
                     <h3>{props.nome}</h3>
