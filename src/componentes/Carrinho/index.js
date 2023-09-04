@@ -43,4 +43,4 @@ const PageCompras = (props) => {
         </div>
     )
 }
-export default PageCompras
+export default PageCompras;
