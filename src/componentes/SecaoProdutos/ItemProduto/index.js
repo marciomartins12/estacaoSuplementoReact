@@ -8,7 +8,7 @@ const Item = (props) => {
 
         <li className="produto">
             <div>
-                <div>
+                <div className="metadinha">
                     <div onClick={(evento) => {
                         evento.target.closest(".produto").querySelector(".displayNone").classList.add("mostrar")
                     }}>

@@ -3,19 +3,24 @@
     border-radius: .45em;
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
     margin: 1%;
+    padding: 0.1%;
     width: 98%;
     height: 98%;
+    position: relative;
+}
+.produto .metadinha{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
 }
 
 .produto img {
-    width:75%;
-    height: auto;
     padding-top: 5%;
     margin-bottom: 1%;
 }
 
 .produto h3 {
-    font-size: 1.60rem;
+    font-size: 1.35em;
     position: relative;
     font-family: 'REM', sans-serif;
     font-weight: 400;
@@ -24,7 +29,6 @@
 
 .produto h4 {
     color: rgb(10, 134, 10);
-    margin-bottom: .45em;
     font-family: 'REM', sans-serif;
     font-weight: 700;
 }
@@ -33,10 +37,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    padding: .3em;
-    justify-content: center;
-    padding-bottom: .8em;
-
+    justify-content: center; 
 }
 
 .divPreco h5 {
@@ -48,17 +49,6 @@
     font-size: 1.2em;
     font-family: 'REM', sans-serif;
     font-weight: 700;
-}
-@media screen and (min-width: 670px) {
-    .produto h3{
-        font-size: 2.3rem;
-    }
-    .produto h4{
-        font-size: 1.4rem;
-    }
-    .produto h5{
-        font-size:1.8em;
-    }
 }
 
 .divPreco .iconeComprar {
@@ -79,35 +69,35 @@
     0% {
         transform: translateX(0);
     }
-
+    
     10% {
         transform: translateX(-5px) rotate(-5deg);
     }
-
+    
     20% {
         transform: translateX(5px) rotate(5deg);
     }
-
+    
     30% {
         transform: translateX(-5px) rotate(-5deg);
     }
-
+    
     40% {
         transform: translateX(5px) rotate(5deg);
     }
-
+    
     50% {
         transform: translateX(-5px) rotate(-5deg);
     }
-
+    
     60% {
         transform: translateX(5px) rotate(5deg);
     }
-
+    
     70% {
         transform: translateX(-5px) rotate(-5deg);
     }
-
+    
     80% {
         transform: translateX(5px) rotate(5deg);
     }
@@ -115,7 +105,7 @@
     90% {
         transform: translateX(-5px) rotate(-5deg);
     }
-
+    
     100% {
         transform: translateX(0);
     }
@@ -161,4 +151,30 @@
     position: absolute;
     left: 8%;
     top: 5%;
+}
+@media screen and (min-width: 490px){
+    .produto h3{
+        font-size: 1.80rem;
+    }
+    .produto h4{
+        font-size: 1rem;
+    }
+    .produto h5{
+        font-size:1.4em;
+    }
+}
+@media screen and (min-width: 670px) {
+    .produto h3{
+        font-size: 2.3rem;
+    }
+    .produto h4{
+        font-size: 1.4rem;
+    }
+    .produto h5{
+        font-size:1.8em;
+    }
+    .produto img{
+
+        min-width: 75%;
+    }
 }

@@ -18,6 +18,11 @@
     font-weight: 700;
 
 }
+@media screen and (min-width: 465px){
+    .App h1{
+        font-size: 2.5em;
+    }
+}
 
 .App span {
     color: rgb(64, 255, 0);
