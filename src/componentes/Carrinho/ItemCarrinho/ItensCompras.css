@@ -7,9 +7,14 @@
     border-radius: 1em;
     padding: 0.45em;
     box-shadow: rgba(0, 255, 94, 0.2) 0px 7px 29px 0px;
+
+
+}
+.containerItemCarrinhoDeCompras h2{
+    font-size: 2em;
 }
 .containerItemCarrinhoDeCompras img{
-    width: 110px;
+    width: 75%;
     height: auto;
 }
 .containerItemCarrinhoDeCompras .div{

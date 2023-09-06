@@ -24,7 +24,7 @@
 
 .container-p h4 {
     text-align: center;
-    width: 75%;
+    width: 100%;
 }
 
 .btn-enviar {
@@ -67,4 +67,16 @@
     margin-top: 20%;
     color: #900;
     font-weight: 900;
+}
+.test{
+    text-align: center;
+    width: 340px;
+}
+@media screen and (min-width: 570px) {
+    .test{
+        width: 500px;
+    }
+    .container-p h4{
+        font-size: 1.75em;
+    }
 }

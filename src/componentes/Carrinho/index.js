@@ -18,17 +18,20 @@ const PageCompras = (props) => {
                     <p className="semNadaNoCarrinho">você não tem item no carrinho</p>
                     : <></>}
                 <div>
+                    <div className="test">
+
                     {props.produtosDaLista.map((item, index) => {
                         return <ItemCarrinho
-                            key={index}
-                            nome={item.nome}
-                            preco={item.preco}
-                            img={item.img}
-                            id={item.id}
-                            removerItemDaLista={props.remover}
+                        key={index}
+                        nome={item.nome}
+                        preco={item.preco}
+                        img={item.img}
+                        id={item.id}
+                        removerItemDaLista={props.remover}
                         />
                     })}
 
+                    </div>
                     {props.produtosDaLista.length > 0 ? (<div >
                         <button className="btn-enviar" onClick={() => props.enviarParaOWhatsapp()}>
                             Enviar <BsWhatsapp className="icon-enviar" />
