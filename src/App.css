@@ -18,11 +18,6 @@
     font-weight: 700;
 
 }
-@media screen and (min-width: 465px){
-    .App h1{
-        font-size: 2.5em;
-    }
-}
 
 .App span {
     color: rgb(64, 255, 0);
@@ -35,6 +30,16 @@
 
 .pc {
     display: none;
+}
+@media screen and (min-width: 465px){
+    .App h1{
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 610px) {
+    .App h1{
+        font-size: 2.8em;
+    }
 }
 
 @media screen and (min-width: 800px) {

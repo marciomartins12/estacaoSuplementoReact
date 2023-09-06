@@ -3,7 +3,6 @@
     border-radius: .45em;
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
     margin: 1%;
-    padding: 0.1%;
     width: 98%;
     height: 98%;
     position: relative;
@@ -38,6 +37,7 @@
     align-items: center;
     text-align: center;
     justify-content: center; 
+    padding-bottom: 4%;
 }
 
 .divPreco h5 {

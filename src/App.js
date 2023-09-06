@@ -245,7 +245,7 @@ function App() {
 
 
       </main>
-      <p className="pc"> Responsivo até width: 760px</p>
+      <p className="pc"> Responsivo até width: 800px</p>
     </Fragment>
   );
 }
