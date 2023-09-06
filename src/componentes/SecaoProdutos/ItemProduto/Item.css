@@ -1,18 +1,21 @@
 .produto {
-    flex: 1;
     color: white;
     border-radius: .45em;
     box-shadow: rgba(7, 118, 2, 0.966) 0px 7px 29px 0px;
-
+    margin: 1%;
+    width: 98%;
+    height: 98%;
 }
 
 .produto img {
-    padding-top: 1em;
-    margin-bottom: .45em;
+    width:75%;
+    height: auto;
+    padding-top: 5%;
+    margin-bottom: 1%;
 }
 
 .produto h3 {
-    font-size: 1.40em;
+    font-size: 1.60rem;
     position: relative;
     font-family: 'REM', sans-serif;
     font-weight: 400;
@@ -46,17 +49,28 @@
     font-family: 'REM', sans-serif;
     font-weight: 700;
 }
+@media screen and (min-width: 670px) {
+    .produto h3{
+        font-size: 2.3rem;
+    }
+    .produto h4{
+        font-size: 1.4rem;
+    }
+    .produto h5{
+        font-size:1.8em;
+    }
+}
 
 .divPreco .iconeComprar {
     font-size: 2.6em;
     background-color: rgba(14, 40, 1, 0.404);
     box-shadow: rgba(2, 46, 31, 0.945) 0px 48px 100px 0px;
-    border-radius: .20em .20em .20em .20em;
+    border-radius: .20em;
     padding: 0.12em;
 }
 
 .divPreco .iconeConfirmado {
-    font-size: 2.6em;
+    font-size: 3rem;
     padding: 0.16em;
     animation: moviment .45s;
 }

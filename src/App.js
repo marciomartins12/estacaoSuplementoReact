@@ -205,9 +205,7 @@ function App() {
 
   function enviarParaOWhatsapp() {
     let textEnviarParaWhatasapp = `https://api.whatsapp.com/send?phone=5598985150405&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20${carrinho.map((item) => item.classe)}%20 Com%20Valor%20Total%20de: R$${carrinho.reduce((a, b) => b.preco + a, 0)}.00`
-
     window.location.href = textEnviarParaWhatasapp;
-
   }
 
   return (
@@ -247,7 +245,7 @@ function App() {
 
 
       </main>
-      <p className="pc"> Somente no mobile. (pc abra o devtools e coloque responsivo para algum mobile)</p>
+      <p className="pc"> Responsivo até width: 760px</p>
     </Fragment>
   );
 }

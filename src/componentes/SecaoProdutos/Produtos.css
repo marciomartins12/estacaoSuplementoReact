@@ -1,7 +1,7 @@
 .div-produtos{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
     text-align: center;
-    gap: .45em;
+    
 }

@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=REM:wght@400;700&family=Source+Code+Pro&display=swap');
 
-.App {
+.App{
     background-color: rgb(0, 0, 0);
-
+    width: 100%;
+    min-width: 320px;
+    height: auto;
 }
 
 .App h1 {
     color: white;
     text-align: center;
-    font-size: 2em;
-    padding: 1em 1em .20em 1em;
+    font-size: 200%;
+    padding: 6% 1% .2% 1%;
     background-color: black;
-    margin-bottom: 1em;
+    margin-bottom: 8%;
     font-family: 'REM', sans-serif;
     font-weight: 700;
 
@@ -22,7 +24,7 @@
 }
 
 .pagCarrinhoDeCompras {
-    font-size: 2em;
+    font-size: 180%;
     color: white;
 }
 
@@ -47,11 +49,11 @@
 .App .footer-loja {
     font-family: 'REM', sans-serif;
     font-weight: 700;
-    font-size: 1.50em;
+    font-size: 160%;
     text-align: center;
     color: #fff;
     background-color: black;
-    padding: 1em 0;
+    padding: 3% 0;
 }
 
 .App .footer-loja span {
