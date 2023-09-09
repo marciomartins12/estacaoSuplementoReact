@@ -217,7 +217,6 @@ function App() {
           <Routes>
             <Route path="/" element={
               <section>
-
                 <h1>Estação<span>Suplementos</span></h1>
                 <Produtos
                   sacola={carrinho}
@@ -246,7 +245,7 @@ function App() {
 
 
       </main>
-      <p className="pc"> Responsivo até width: 800px <FcIphone/></p>
+      <p className="pc"> Responsivo até width: 800px. <FcIphone/></p>
     </Fragment>
   );
 }
