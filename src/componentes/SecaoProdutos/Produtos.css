@@ -1,7 +1,14 @@
 .div-produtos{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     
+}
+.div-produtos li{
+    flex: 1;
+}
+.div-produtos img{
+    width: 150px;
+    height: auto;
 }

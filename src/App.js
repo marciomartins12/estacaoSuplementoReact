@@ -5,7 +5,6 @@ import { Fragment, useState } from "react";
 import Carrinho from "./componentes/botaoCarrinhoDeCompras";
 import PageCompras from "./componentes/Carrinho";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {FcIphone} from "react-icons/fc";
 
 
 function App() {
@@ -245,7 +244,6 @@ function App() {
 
 
       </main>
-      <p className="pc"> Responsivo até width: 800px. <FcIphone/></p>
     </Fragment>
   );
 }

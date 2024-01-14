@@ -41,21 +41,6 @@
         font-size: 2.8em;
     }
 }
-
-@media screen and (min-width: 800px) {
-    .App {
-        display: none;
-    }
-
-    .pc {
-        display: block;
-        color: white;
-        font-size: 6em;
-        text-align: center;
-        margin-top: 10%;
-    }
-}
-
 .App .footer-loja {
     font-family: 'REM', sans-serif;
     font-weight: 700;
