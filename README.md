@@ -1,3 +1,45 @@
+
+
+![Site.png](https://portfoliomarciomartins12.netlify.app/assets/imgProjects/estacaosuplemento.png)
+# Estação Suplementos
+O "Estação Suplementos" é um e-commerce desenvolvido em React, proporcionando uma experiência de compra descomplicada para entusiastas de suplementos. Nossa homepage exibe uma variedade de produtos, cada um equipado com um prático ícone de carrinho. Com apenas um clique, adicione seus suplementos favoritos e navegue sem esforço pelos detalhes de cada produto.
+
+Explore a página de compra para revisar seus itens, ajustar quantidades e visualizar o preço total. E para tornar tudo ainda mais conveniente, implementamos um botão especial de envio para o WhatsApp. Este recurso exclusivo cria uma mensagem personalizada para o dono do e-commerce, destacando seus produtos escolhidos e o valor total da compra.
+
+## Funcionalidades
+
+**Homepage Atraente:**
+   - Apresenta uma seleção variada de produtos de suplementos.
+   - Cada produto exibe um ícone de carrinho para adição rápida.
+
+- **Detalhes do Produto:**
+   - Ao clicar nos produtos, os usuários podem acessar páginas individuais com informações detalhadas, incluindo descrições, ingredientes e preços.
+
+- **Carrinho de Compras Interativo:**
+   - Permite aos usuários adicionar produtos ao carrinho de forma intuitiva.
+   - Possibilidade de ajustar a quantidade e remover itens diretamente no carrinho.
+
+- **Página de Compra:**
+   - Exibe uma lista detalhada dos produtos no carrinho, incluindo descrições e preços.
+   - Permite aos usuários ajustar quantidades, remover produtos e visualizar o preço total da compra.
+
+- **Botão WhatsApp:**
+   - Na página de compra, um botão especial de envio para o WhatsApp cria uma mensagem personalizada para o proprietário do e-commerce.
+   - A mensagem inclui detalhes dos produtos escolhidos e o valor total da compra.
+
+- **Navegação com React Router DOM:**
+   - Implementa navegação dinâmica entre as páginas para uma experiência de usuário mais fluida.
+
+- **Design Responsivo:**
+   - Garante uma apresentação visual consistente em dispositivos móveis e desktop.
+
+- **Estilo Modular com Módulos CSS:**
+   - Utiliza módulos CSS para um estilo organizado e fácil manutenção.
+
+- **Flexibilidade para Contribuições:**
+   - Projeto aberto a contribuições, personalizações e sugestões da comunidade.
+
+
 # Getting Started with Create React App
 link site
 responsivo somente mobile.
